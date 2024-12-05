@@ -137,7 +137,28 @@ return [
          * It defaults to: "table table-striped table-hover nowrap rounded card-table table-vcenter card-table shadow-xs border-xs".
          */
         'table' => null,
-
+        'operations' => [
+            'list'   => [
+                'icon'  => 'nav-icon la la-list',
+                'class' => 'btn-secondary',
+            ],
+            'create' => [
+                'icon'  => 'nav-icon la la-plus',
+                'class' => 'btn-success',
+            ],
+            'update' => [
+                'icon'  => 'nav-icon la la-pencil',
+                'class' => 'btn-warning',
+            ],
+            'delete' => [
+                'icon'  => 'nav-icon la la-trash',
+                'class' => 'btn-danger',
+            ],
+        ],
+        'body_class' => 'app aside-menu-fixed sidebar-lg-show',
+        'header_class' => 'app-header navbar navbar-color bg-primary border-0',
+        'sidebar_class' => 'sidebar sidebar-pills bg-light',
+        'footer_class' => 'app-footer',    
         /**
          * Use this as fallback config for themes to pass classes to the table wrapper component displayed in List Operation.
          */
